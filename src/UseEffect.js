@@ -6,6 +6,9 @@ const UseEffect = () => {
 
   useEffect(() => {
     alert("we are in the useEffect!"); // This runs when 'clicked' changes
+    return()=>{
+      console.log("return of use state")
+    }//basically the is used for clean up , , what will happen is that , this code will be running ,"we are in the useeffect , line 8 , willl be executed after , line 10 , basically used for clean up "
   }, [clicked]); // ✅ Triggers only when 'clicked' changes
 
   return (
